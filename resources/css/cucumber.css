@@ -1,0 +1,102 @@
+.main {
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+}
+
+.cucumber {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+}
+
+#div_1 {
+    flex-direction: row-reverse;
+}
+
+.big-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border: solid 2px var(--main-color);
+    border-radius: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+.big-image img {
+    height: 100%;
+}
+
+.name-and-short {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.name {
+    text-align: center;
+    font-size: 48px;
+	user-select: text;
+    margin-bottom: 5%;
+    color: var(--main-color)
+}
+
+.short-description {
+    align-self: flex-start;
+    font-size: 36px;
+	user-select: text;
+}
+
+.description {
+    margin-top: 5vw;;
+    margin-right: 15%;
+    width: 50vw;
+    font-size: 32px;
+    text-align: justify;
+	user-select: text;
+}
+
+.home-button-wrapper {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 3vw;
+    top: 5vw;
+}
+.home-button {
+    text-align: center;
+    width: 5vw;
+    height: 5vw;
+    background: none;
+    border: none;
+}
+
+.home-button i {
+    overflow-y: hidden;
+    font-size: 48px;
+    color: var(--main-color);
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.5);
+        transition: .2s;
+        filter: drop-shadow(0 0 5px var(--main-color-opacity));
+        color: white;
+    }
+}
+
+
+
